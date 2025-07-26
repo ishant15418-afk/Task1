@@ -1,0 +1,52 @@
+/* Base Styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #333;
+  transition: background-color 0.3s ease;
+  z-index: 1000;
+}
+
+.navbar.scrolled {
+  background-color: #555; /* Changes when scrolling */
+}
+
+.nav-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-menu li {
+  margin: 0 15px;
+}
+
+.nav-menu li a {
+  display: block;
+  padding: 15px 20px;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+/* Hover effect */
+.nav-menu li a:hover {
+  background-color: #fff;
+  color: #333;
+  border-radius: 5px;
+}
+
+/* Main content */
+.content {
+  padding-top: 80px; /* So content doesn't hide under navbar */
+  text-align: center;
+}
